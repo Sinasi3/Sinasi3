@@ -84,10 +84,10 @@ First, we choose a validation set of hard examples, and then we use this validat
 
                                                                      Notations:
 
-* ![][image10] : Validation set  
-  * ![][image11]: Training set  
-1. **Outer Level:** Optimize the splitting function ![][image12] , determining the training set ![][image10]and validation set ![][image11] split. In reality, we place an extra restriction on the size of the validation set: ![][image13], where δ is a predetermined fractional constant.  
-2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![][image14] to minimize the weighted training loss.  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not1.PNG?raw=true) : Validation set  
+  * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not2.PNG?raw=true): Training set  
+1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3ilk.PNG?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3.PNG?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not4.PNG?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not5.PNG?raw=true), where δ is a predetermined fractional constant.  
+2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not.PNG?ra6w=true) to minimize the weighted training loss.  
 3. **Inner Level:** Finally, minimize the weighted loss with respect to model parameters θ.
 
 ### **4.1. Objective and generalization**
