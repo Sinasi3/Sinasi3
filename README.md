@@ -49,7 +49,7 @@ Two datasets are used in the basic LRW formulation. LRW learns a classifier with
 
 								Notations:
 
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not1.PNG?raw=true): N instance training dataset  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not1.jpg?raw=true): N instance training dataset  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not2.PNG?raw=true): M instance training dataset  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not3.PNG?raw=true): Loss function  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not4.PNG?raw=true): Classifier  
