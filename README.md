@@ -82,12 +82,13 @@ The hypothesis presented here is that **generalization in supervised learning** 
 First, we choose a validation set of hard examples, and then we use this validation set for LRW to train a classifier on the remaining data. When the aforementioned concept is formalized, it results in a combined optimization issue of data partitioning (train, validation), and LRW training. This is because the difficulty of instances is defined by the learnt model itself. Below, we outline the formal issue.  
 ![A group of mathematical symbols](https://github.com/Sinasi3/Sinasi3/blob/main/4.PNG?raw=true)
 
-                                                                     Notations:
+                                                                   
+								     Notations:
 
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not1.PNG?raw=true) : Validation set  
-  * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not2.PNG?raw=true): Training set  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not2.PNG?raw=true): Training set  
 1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3ilk.PNG?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3.PNG?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not4.PNG?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not5.PNG?raw=true), where δ is a predetermined fractional constant.  
-2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not.PNG?ra6w=true) to minimize the weighted training loss.  
+2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not6.PNG?ra6w=true) to minimize the weighted training loss.  
 3. **Inner Level:** Finally, minimize the weighted loss with respect to model parameters θ.
 
 ### **4.1. Objective and generalization**
