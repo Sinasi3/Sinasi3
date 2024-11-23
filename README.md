@@ -97,7 +97,7 @@ In order to obtain theoretical understanding of generalization, the study furthe
 
 Suppose:
 
-* ![](S_{tr} = \left\{(x_i, y_i)\right\}_{i=1}^N) 
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/w.jpg?raw=true) 
 * ![][image16]  
 * Domains of ![][image17]are very large
 
