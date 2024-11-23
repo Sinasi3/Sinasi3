@@ -112,19 +112,19 @@ Suppose:
 
 ![A close-up of a math equationDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in5i.jpg?raw=true) 
 
-* The weighting function ϕ(x,y), which modifies the probability distribution Q over the dataset, determines ![][image20].  
+* The weighting function ϕ(x,y), which modifies the probability distribution Q over the dataset, determines ![](https://github.com/Sinasi3/Sinasi3/blob/main/1.png?raw=true).  
 * **STEP2**  
-* The problem becomes simpler if  ![][image21]. When ![][image22] is selected, the constraint is as follows:
+* The problem becomes simpler if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/2.png?raw=true). When ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.png?raw=true) is selected, the constraint is as follows:
 
-                     ![][image23]
+                     ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.png?raw=true)
 
-* Set  ??![][image24] and select ![][image25] to minimize over measurable functions if  ![][image26].  
+* Set  ??![](https://github.com/Sinasi3/Sinasi3/blob/main/5.png?raw=true) and select ![](https://github.com/Sinasi3/Sinasi3/blob/main/6.png?raw=true) to minimize over measurable functions if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/7.png?raw=true).  
 * **STEP3**  
-* Using a weighting function ![][image27] that matches probabilities on intersections and sets ![][image28]elsewhere, the same logic applies to any ![][image29].		  
+* Using a weighting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/8.png?raw=true) that matches probabilities on intersections and sets ![](https://github.com/Sinasi3/Sinasi3/blob/main/9.png?raw=true)elsewhere, the same logic applies to any ![](https://github.com/Sinasi3/Sinasi3/blob/main/10.png?raw=true).		  
 * **STEP4**  
 * Finding the hardest subset S of size 6(N+M) is the definition of the tri-level optimization, which reduces to:
 
-  ![A close up of symbolsDescription automatically generated][image30]
+  ![A close up of symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/11.png?raw=true)
 
 ## **5.Efficient algorithm for validation optimization**
 
