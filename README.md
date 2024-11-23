@@ -47,7 +47,7 @@ This section of the paper outlines a framework for classifier learned reweightin
 
 Two datasets are used in the basic LRW formulation. LRW learns a classifier with parameters θ and an instance-wise weighting function that minimizes the following bi-level objective given a desired loss function.
 
-								Notations:
+Notations:
 
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not1.jpg?raw=true): N instance training dataset  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not2.jpg.png?raw=true): M instance training dataset  
@@ -83,7 +83,7 @@ First, we choose a validation set of hard examples, and then we use this validat
 ![A group of mathematical symbols](https://github.com/Sinasi3/Sinasi3/blob/main/4not.jpg?raw=true)
 
                                                                    
-								     Notations:
+Notations:
 
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1.jpg?raw=true) : Validation set  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.2.jpg?raw=true): Training set  
