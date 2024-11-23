@@ -114,9 +114,7 @@ Suppose:
 
 * The weighting function ϕ(x,y), which modifies the probability distribution Q over the dataset, determines ![](https://github.com/Sinasi3/Sinasi3/blob/main/1.png?raw=true).  
 * **STEP2**  
-* The problem becomes simpler if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/2.png?raw=true). When ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.png?raw=true) is selected, the constraint is as follows:
-
-                     ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.png?raw=true)
+* The problem becomes simpler if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/2.png?raw=true). When ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.png?raw=true) is selected, the constraint is as follows: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.png?raw=true)
 
 * Set  ??![](https://github.com/Sinasi3/Sinasi3/blob/main/5.png?raw=true) and select ![](https://github.com/Sinasi3/Sinasi3/blob/main/6.png?raw=true) to minimize over measurable functions if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/7.png?raw=true).  
 * **STEP3**  
