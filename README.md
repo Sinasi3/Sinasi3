@@ -57,7 +57,7 @@ Two datasets are used in the basic LRW formulation. LRW learns a classifier with
 
 ### **3.1 Bi-Level optimization objective**
 
-![A group of mathematical symbolsDescription automatically generated][image1.png]
+![A group of mathematical symbolsDescription automatically generated][https://github.com/Sinasi3/Sinasi3/blob/main/image1.png?raw=true]
 
 * **Training Objective** seeks to determine which classifier parameters, ![][image7], minimize the weighted training loss, with weights ![][image8]and adjusting the significance of each training instance. The classifier will be guided toward settings that will yield good results on the validation data using this weighting function.  
 * **Validation objective** is to optimize ϕ , the instance-specific weights, by minimizing the unweighted validation loss. This step indirectly influences the inner optimization(training objective) by reweighting the training data to influence the learnt classifier, which strengthens the model's generalization on validation data.
