@@ -25,7 +25,7 @@ The main claim of this paper is that if they create a dataset with hard to class
 
 Most of the works in this field focused on avoiding noisy labels on training set by comparing the loss of given instance on a clean validation set. This procedure might include learning a per-instance free parameter or learning a simple MLP network to estimate an importance to the instance based on the obtained loss value. Finding a clean validation set in this scenario appears to be a challenge in practice. A Meta-Learning based re-weighting scheme, namely Fast Sample Reweighting, is proposed against this impracticality to generate a pseudo-clean validation set. Same paper also proposed approximations that decrease the computational complexity of the training procedure. A new study named RHO-loss proposes that if only worthy points for training are selected, generalization property of the model would increase. The 'worth' in this context is calculated as the difference between training loss and a hold-out set loss.
 
-	Recent Line of work focuses on arranging the weighting based on the context of an instance in relation to overall dataset distribution. There are some studies suggesting target domain data in the validation set can improve domain shift performance of classifiers. 
+Recent Line of work focuses on arranging the weighting based on the context of an instance in relation to overall dataset distribution. There are some studies suggesting target domain data in the validation set can improve domain shift performance of classifiers. 
 
 * **Meta-Learning:**
 
