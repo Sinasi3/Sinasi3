@@ -53,7 +53,7 @@ Two datasets are used in the basic LRW formulation. LRW learns a classifier with
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not2.jpg.png?raw=true): M instance training dataset  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not3.jpg.png?raw=true): Loss function  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not4.jpg.png?raw=true): Classifier  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not5.jpg.jng?raw=true): Instance-wise weighting function
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not5.jpg.jpg?raw=true): Instance-wise weighting function
 
 ### **3.1 Bi-Level optimization objective**
 
