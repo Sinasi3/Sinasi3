@@ -149,20 +149,20 @@ The tri-level optimization is reduced by the method to a bi-level formulation, w
 
 * The goal is to maximize loss on hard instances while minimizing loss on the validation set to enhance generalization by accurately predicting the label pair (𝑥,𝑦).
 
-  ![A close-up of a math problemDescription automatically generated][image31]
+  ![A close-up of a math problemDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/12.png?raw=true)
 
 ### **6.2. Meta-network (ϕ)**
 
 * The main objective is minimizing the validation error using the classifier's predictions.
 
-  ![A black and white math symbolDescription automatically generated][image32]
+  ![A black and white math symbolDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/13.png?raw=true)
 
 ### **6.3. Classifier network (θ)**
 
 * Optimizing weighted training loss on the training set D′.  
-* After e epochs of bi-level setup, ![][image33] epochs occur on training data, where ![][image34] accounts for K-times inner loop iterations.
+* After e epochs of bi-level setup, ![](https://github.com/Sinasi3/Sinasi3/blob/main/14.png?raw=true) epochs occur on training data, where ![](https://github.com/Sinasi3/Sinasi3/blob/main/15.png?raw=true) accounts for K-times inner loop iterations.
 
-  ![A black and white math symbolsDescription automatically generated with medium confidence][image35]
+  ![A black and white math symbolsDescription automatically generated with medium confidence](https://github.com/Sinasi3/Sinasi3/blob/main/16.png?raw=true)
 
 ## **7\. Experiments:**
 
@@ -207,6 +207,7 @@ Rho-loss
 
 #### **8.1.2.  MOLERE outperforms reweighting baselines**
 
+![](https://github.com/Sinasi3/Sinasi3/blob/main/17.png?raw=true)
 LRWOpt is compared with FSR, MBR (provides protection for certain adversarial attacks.), MAPLE, MWN, StableNet, BiLAW.
 
 * "just train twice" also suggests that and ad-hoc upweighting of poor performing instances in a second round of training.
@@ -219,17 +220,18 @@ LRWOpt is compared with FSR, MBR (provides protection for certain adversarial at
 Wilds benchmark is utilized on testing with OOD data slomh eiyj Diabetic Retinopathy. 
 
 ImageNet-A and ImageNet-R are also used for validation of OOD Testing. This experiment is primarily performed to check the generalizaton capacity and domain shift robustness of the model.
-
+![](https://github.com/Sinasi3/Sinasi3/blob/main/18.png?raw=true)
 Figure above confirms the model's generalization capability dominance on ERM classifiers (left) and the dominance on other reweighting baselines (right).
 
 ### **8.3. Practical Label Noise Settings**
 
 Inst. C-10 and Clothing 1M are used for testing the model on noise robustness. 
-
+![](https://github.com/Sinasi3/Sinasi3/blob/main/19.png?raw=true)
 Above table shows the comparison of bi-level approaches against LRWOpt. 0.85% gain on best performing GDW is observable.
 
 #### **8.4. Skewed labels** 
 
+![](https://github.com/Sinasi3/Sinasi3/blob/main/20.png?raw=true)
 Skewed labels on CIFAR-100 significanty outperforms other meta-learning based reweighting methods, achieving 2.22% gains.
 
 #### **8.5. MOLERE scales to large pretrained models**
@@ -242,9 +244,13 @@ LRW-Hard Outperforms other methods significantly to other methods. It is also im
 
 Datasets where hard instance datasets is available in MOLERE Context. For ImageNet-1K dataset, two datasets are frequently studied to gauge generalization properties of learned classifiers \- IN-A and IN-R datasets. Each datasets are portioned for LRW validation and testing. 
 
+![](https://github.com/Sinasi3/Sinasi3/blob/main/21.png?raw=true)
+
 #### **8.7. Margin Maximization Via Meta-Learning**
 
 Authors empirically claim that MOLERE affects a margin maximization effect, which implies that MOLERE classifiers are larger in margins in comparison to ERM Classifiers. Validation data are selected to be low-margin instances, which LRW Classifier upweights with instances most similar to the low-margin validation set (CIFAR-100 and ImageNet-100 are used for testing).
+
+![](https://github.com/Sinasi3/Sinasi3/blob/main/22.png?raw=true)
 
 ## **9.References**
 
