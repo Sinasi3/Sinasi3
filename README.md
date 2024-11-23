@@ -80,7 +80,7 @@ The hypothesis presented here is that **generalization in supervised learning** 
    
 
 First, we choose a validation set of hard examples, and then we use this validation set for LRW to train a classifier on the remaining data. When the aforementioned concept is formalized, it results in a combined optimization issue of data partitioning (train, validation), and LRW training. This is because the difficulty of instances is defined by the learnt model itself. Below, we outline the formal issue.  
-![A group of mathematical symbols]((https://github.com/Sinasi3/Sinasi3/blob/main/4.PNG?raw=true))
+![A group of mathematical symbols](https://github.com/Sinasi3/Sinasi3/blob/main/4.PNG?raw=true)
 
                                                                      Notations:
 
