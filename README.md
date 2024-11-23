@@ -3,7 +3,8 @@
 ## 
 
 ## **1.Introductıon**
-
+```latex
+S_{tr} = \left\{(x_i, y_i)\right\}_{i=1}^N
 Learned Reweighting is an approach that utilizes assigned weights on dataset to optimize validation dataset representation. The authors in this paper show that hard-to-classify instances has both theoretical connection and strong empirical evidence to generalization. 
 
 Their proposed methods outperform a wide range of baselines on various train and test datasets.
