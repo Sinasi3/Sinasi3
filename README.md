@@ -53,11 +53,11 @@ Two datasets are used in the basic LRW formulation. LRW learns a classifier with
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not2.jpg.png?raw=true): M instance training dataset  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not3.jpg.png?raw=true): Loss function  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not4.jpg.png?raw=true): Classifier  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not5.jpg.png?raw=true): Instance-wise weighting function
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not5.jpg.jng?raw=true): Instance-wise weighting function
 
 ### **3.1 Bi-Level optimization objective**
 
-![A group of mathematical symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/3not6.jpg.png?raw=true)
+![A group of mathematical symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/3not6.jpg.jpg?raw=true)
 
 * **Training Objective** seeks to determine which classifier parameters, ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.1not1.jpg?raw=true), minimize the weighted training loss, with weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.1not2.jpg?raw=true)and adjusting the significance of each training instance. The classifier will be guided toward settings that will yield good results on the validation data using this weighting function.  
 * **Validation objective** is to optimize ϕ , the instance-specific weights, by minimizing the unweighted validation loss. This step indirectly influences the inner optimization(training objective) by reweighting the training data to influence the learnt classifier, which strengthens the model's generalization on validation data.
