@@ -49,17 +49,17 @@ Two datasets are used in the basic LRW formulation. LRW learns a classifier with
 
 								Notations:
 
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/notation1.PNG?raw=true): N instance training dataset  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/notation2.PNG?raw=true): M instance training dataset  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/notation3.PNG?raw=true): Loss function  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/notation4.PNG?raw=true): Classifier  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/notation5.PNG?raw=true): Instance-wise weighting function
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not1.PNG?raw=true): N instance training dataset  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not2.PNG?raw=true): M instance training dataset  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not3.PNG?raw=true): Loss function  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not4.PNG?raw=true): Classifier  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/3not5.PNG?raw=true): Instance-wise weighting function
 
 ### **3.1 Bi-Level optimization objective**
 
-![A group of mathematical symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/3.1.PNG?raw=true)
+![A group of mathematical symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/3not6.PNG?raw=true)
 
-* **Training Objective** seeks to determine which classifier parameters, ![](https://github.com/Sinasi3/Sinasi3/blob/main/1.PNG?raw=true), minimize the weighted training loss, with weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/2.PNG?raw=true)and adjusting the significance of each training instance. The classifier will be guided toward settings that will yield good results on the validation data using this weighting function.  
+* **Training Objective** seeks to determine which classifier parameters, ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.1not1.PNG?raw=true), minimize the weighted training loss, with weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.1not2.PNG?raw=true)and adjusting the significance of each training instance. The classifier will be guided toward settings that will yield good results on the validation data using this weighting function.  
 * **Validation objective** is to optimize ϕ , the instance-specific weights, by minimizing the unweighted validation loss. This step indirectly influences the inner optimization(training objective) by reweighting the training data to influence the learnt classifier, which strengthens the model's generalization on validation data.
 
 
@@ -80,15 +80,15 @@ The hypothesis presented here is that **generalization in supervised learning** 
    
 
 First, we choose a validation set of hard examples, and then we use this validation set for LRW to train a classifier on the remaining data. When the aforementioned concept is formalized, it results in a combined optimization issue of data partitioning (train, validation), and LRW training. This is because the difficulty of instances is defined by the learnt model itself. Below, we outline the formal issue.  
-![A group of mathematical symbols](https://github.com/Sinasi3/Sinasi3/blob/main/4.PNG?raw=true)
+![A group of mathematical symbols](https://github.com/Sinasi3/Sinasi3/blob/main/4not.PNG?raw=true)
 
                                                                    
 								     Notations:
 
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not1.PNG?raw=true) : Validation set  
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not2.PNG?raw=true): Training set  
-1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3ilk.PNG?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not3.PNG?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not4.PNG?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not5.PNG?raw=true), where δ is a predetermined fractional constant.  
-2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4not6.PNG?ra6w=true) to minimize the weighted training loss.  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1.PNG?raw=true) : Validation set  
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.2.PNG?raw=true): Training set  
+1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.3.PNG?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.4.PNG?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.5.PNG?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.6.PNG?raw=true), where δ is a predetermined fractional constant.  
+2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.7.PNG?ra6w=true) to minimize the weighted training loss.  
 3. **Inner Level:** Finally, minimize the weighted loss with respect to model parameters θ.
 
 ### **4.1. Objective and generalization**
@@ -97,20 +97,20 @@ In order to obtain theoretical understanding of generalization, the study furthe
 
 Suppose:
 
-* ![](https://github.com/Sinasi3/Sinasi3/blob/main/w.jpg?raw=true) 
-* ![][image16]  
-* Domains of ![][image17]are very large
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in1i.jpg?raw=true) 
+* ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in2si.jpg?raw=true)   
+* Domains of ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in3ü.jpg?raw=true) are very large
 
   Then the tri-level optimization problem we discussed at 1.2. can be reduced to:
 
-  ![A close up of symbolsDescription automatically generated][image18]
+  ![A close up of symbolsDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in4ü.jpg?raw=true) 
 
 **Proof:**
 
 * **STEP1**  
 * Molere MOLERE involves solving two nested optimization problems are equivalent:
 
-![A close-up of a math equationDescription automatically generated][image19]
+![A close-up of a math equationDescription automatically generated](https://github.com/Sinasi3/Sinasi3/blob/main/4.1in5i.jpg?raw=true) 
 
 * The weighting function ϕ(x,y), which modifies the probability distribution Q over the dataset, determines ![][image20].  
 * **STEP2**  
