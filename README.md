@@ -87,7 +87,7 @@ Notations:
 
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.1.jpg?raw=true) : Validation set  
 * ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.2.jpg?raw=true): Training set  
-1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.3.jpg?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.4.PNG?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.5.jpg?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.6.jpg?raw=true), where δ is a predetermined fractional constant.  
+1. **Outer Level:** Optimize the splitting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.3.jpg?raw=true) , determining the training set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.4.jpg?raw=true)and validation set ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.5.jpg?raw=true) split. In reality, we place an extra restriction on the size of the validation set: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.6.jpg?raw=true), where δ is a predetermined fractional constant.  
 2. **Middle Level:** Given the validation set, find the optimal instance-wise weights ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.7.jpg?ra6w=true) to minimize the weighted training loss.  
 3. **Inner Level:** Finally, minimize the weighted loss with respect to model parameters θ.
 
