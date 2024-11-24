@@ -221,7 +221,7 @@ ImageNet-A and ImageNet-R are also used for validation of OOD Testing. This expe
 ![](https://github.com/Sinasi3/Sinasi3/blob/main/18.png?raw=true)
 Figure above confirms the model's generalization capability dominance on ERM classifiers (left) and the dominance on other reweighting baselines (right).
 
-### **8.3. Practical Label Noise Settings**
+### **8.3. Practical label noise settings**
 
 Inst. C-10 and Clothing 1M are used for testing the model on noise robustness. 
 ![](https://github.com/Sinasi3/Sinasi3/blob/main/19.png?raw=true)
@@ -238,13 +238,13 @@ LRW-Hard, LRW-Easy and LRW-Random are analyzed along with the ERM Baseline on Vi
 
 LRW-Hard Outperforms other methods significantly to other methods. It is also important to note that there is a 1.92% difference between LRW-Easy and LRW-Hard, which demonstrates the choice of the validation set affects the sensitivity of these techniques.
 
-#### ***8.6. Leveraging OOD Val Set: A Heuristic Solution***
+#### ***8.6. Leveraging OOD val set: a heuristic solution***
 
 Datasets where hard instance datasets is available in MOLERE Context. For ImageNet-1K dataset, two datasets are frequently studied to gauge generalization properties of learned classifiers \- IN-A and IN-R datasets. Each datasets are portioned for LRW validation and testing. 
 
 ![](https://github.com/Sinasi3/Sinasi3/blob/main/21.png?raw=true)
 
-#### **8.7. Margin Maximization Via Meta-Learning**
+#### **8.7. Margin maximization via meta-learning**
 
 Authors empirically claim that MOLERE affects a margin maximization effect, which implies that MOLERE classifiers are larger in margins in comparison to ERM Classifiers. Validation data are selected to be low-margin instances, which LRW Classifier upweights with instances most similar to the low-margin validation set (CIFAR-100 and ImageNet-100 are used for testing).
 
