@@ -116,7 +116,7 @@ Suppose:
 * **STEP2**  
 * The problem becomes simpler if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/2.png?raw=true). When ![](https://github.com/Sinasi3/Sinasi3/blob/main/3.png?raw=true) is selected, the constraint is as follows: ![](https://github.com/Sinasi3/Sinasi3/blob/main/4.png?raw=true)
 
-* Set  ??![](https://github.com/Sinasi3/Sinasi3/blob/main/5.png?raw=true) and select ![](https://github.com/Sinasi3/Sinasi3/blob/main/6.png?raw=true) to minimize over measurable functions if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/7.png?raw=true).  
+* Set   𝜙![](https://github.com/Sinasi3/Sinasi3/blob/main/5.png?raw=true) and select ![](https://github.com/Sinasi3/Sinasi3/blob/main/6.png?raw=true) to minimize over measurable functions if  ![](https://github.com/Sinasi3/Sinasi3/blob/main/7.png?raw=true).  
 * **STEP3**  
 * Using a weighting function ![](https://github.com/Sinasi3/Sinasi3/blob/main/8.png?raw=true) that matches probabilities on intersections and sets ![](https://github.com/Sinasi3/Sinasi3/blob/main/9.png?raw=true)elsewhere, the same logic applies to any ![](https://github.com/Sinasi3/Sinasi3/blob/main/10.png?raw=true).		  
 * **STEP4**  
