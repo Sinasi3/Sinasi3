@@ -2,7 +2,7 @@
 
 ## 
 
-## **1.Introductıon**
+## **1.Introduction**
 
 Learned Reweighting is an approach that utilizes assigned weights on dataset to optimize validation dataset representation. The authors in this paper show that hard-to-classify instances has both theoretical connection and strong empirical evidence to generalization. 
 
