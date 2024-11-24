@@ -188,9 +188,7 @@ Extensive experimentation has been evaluated. Before pooling, ranking, and repar
 
 * Following Baselines are compared:
 
-\- ERM, MWN, FSR, L2R, MAPLE, BiLAW, GDW, StableNet, Margin Based Reweighting, 
-
-Rho-loss
+\- ERM, MWN, FSR, L2R, MAPLE, BiLAW, GDW, StableNet, Margin Based Reweighting, Rho-loss
 
 ## **8\. Result**
 
